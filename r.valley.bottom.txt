@@ -1,0 +1,15 @@
+r.valley.bottom
+ Calculation of Multi-resolution Valley Bottom Flatness (MrVBF) index
+Raster (r.*)
+QgsProcessingParameterRasterLayer|elevation|Name of elevation raster map|None|False
+QgsProcessingParameterNumber|t_slope|Initial Threshold for Slope|QgsProcessingParameterNumber.Double|16.0|True|None|None
+QgsProcessingParameterNumber|t_pctl_v|Threshold (t) for transformation of Elevation Percentile (Lowness)|QgsProcessingParameterNumber.Double|0.4|True|None|None
+QgsProcessingParameterNumber|t_pctl_r|Threshold (t) for transformation of Elevation Percentile (Upness)|QgsProcessingParameterNumber.Double|0.3|True|None|None
+QgsProcessingParameterNumber|t_vf|Threshold (t) for transformation of Valley Bottom Flatness|QgsProcessingParameterNumber.Double|0.3|True|None|None
+QgsProcessingParameterNumber|t_rf|Threshold (t) for transformation of Ridge Top Flatness|QgsProcessingParameterNumber.Double|0.35|True|None|None
+QgsProcessingParameterNumber|p_slope|Shape Parameter (p) for Slope|QgsProcessingParameterNumber.Double|4.0|True|None|None
+QgsProcessingParameterNumber|p_pctl|Shape Parameter (p) for Slope|QgsProcessingParameterNumber.Double|3.0|True|None|None
+QgsProcessingParameterNumber|min_cells|Minimum number of cells in generalized DEM|QgsProcessingParameterNumber.Integer|2|True|None|None
+QgsProcessingParameterBoolean|-s|Use square moving window instead of circular moving window|False
+QgsProcessingParameterRasterDestination|mrvbf|Name of output MRVBF raster map|None|True
+QgsProcessingParameterRasterDestination|mrrtf|Name of output MRRTF raster map|None|True

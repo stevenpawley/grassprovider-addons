@@ -1,0 +1,14 @@
+r.stream.distance
+Calculates distance to and elevation above streams and outlet.
+Raster (r.*)
+QgsProcessingParameterRasterLayer|stream_rast|Name of input raster map with stream network (in outlet mode is the name for outlet raster map)|None|False
+QgsProcessingParameterRasterLayer|direction|Name of input raster map with flow direction|None|False
+QgsProcessingParameterRasterLayer|elevation|Name of input elevation raster map|None|False
+QgsProcessingParameterEnum|method|Calculation method|upstream;downstream|False|1|True
+QgsProcessingParameterBoolean|-o|Calculate parameters for outlets (outlet mode) instead of (default) streams|False
+QgsProcessingParameterBoolean|-s|Calculate parameters for subbasins (ignored in stream mode)|False
+QgsProcessingParameterBoolean|-n|Calculate nearest local maximum (ignored in downstream calculation)|False
+QgsProcessingParameterBoolean|-m|QgsProcessingParameterBoolean|-n|Calculate nearest local maximum (ignored in downstream calculation)|False|False
+QgsProcessingParameterNumber|memory|Max memory used in memory swap mode (MB)|QgsProcessingParameterNumber.Double|300|True|None|None
+QgsProcessingParameterRasterDestination|distance|Name for output distance raster map|None|True
+QgsProcessingParameterRasterDestination|difference|Name for output elevation difference raster map|None|True
