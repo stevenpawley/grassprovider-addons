@@ -1,0 +1,8 @@
+r.mtpi
+Calculates the multiscale topographic position index
+Raster (r.*)
+QgsProcessingParameterRasterLayer|input|Input DEM from which to calculate mTPI|None|False
+QgsProcessingParameterNumber|minradius|Smoothing neighborhood radius size (minimum)|QgsProcessingParameterNumber.Integer|1|True|1|None
+QgsProcessingParameterNumber|maxradius|Smoothing neighborhood radius size (maximum)|QgsProcessingParameterNumber.Integer|31|True|1|None
+QgsProcessingParameterNumber|steps|Number of steps to use for DEM generalization between minradius and maxradius|QgsProcessingParameterNumber.Integer|5|True|2|None
+QgsProcessingParameterRasterDestination|output|Multi-scale topographic position index|None|True
