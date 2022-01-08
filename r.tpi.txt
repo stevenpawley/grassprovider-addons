@@ -1,4 +1,4 @@
-r.mtpi
+r.tpi
 Calculates the multiscale topographic position index
 Raster (r.*)
 QgsProcessingParameterRasterLayer|input|Input DEM from which to calculate mTPI|None|False
