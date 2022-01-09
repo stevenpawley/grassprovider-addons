@@ -1,5 +1,5 @@
 r.valley.bottom
- Calculation of Multi-resolution Valley Bottom Flatness (MrVBF) index
+Calculation of Multi-resolution Valley Bottom Flatness (MrVBF) index
 Raster (r.*)
 QgsProcessingParameterRasterLayer|elevation|Name of elevation raster map|None|False
 QgsProcessingParameterNumber|t_slope|Initial Threshold for Slope|QgsProcessingParameterNumber.Double|16.0|True|None|None
