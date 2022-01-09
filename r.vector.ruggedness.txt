@@ -1,0 +1,11 @@
+r.vector.ruggedness
+Vector Ruggedness Measure
+Raster (r.*)
+QgsProcessingParameterRasterLayer|elevation|GRASS raster elevation map|None|False
+QgsProcessingParameterRasterLayer|slope|Optional slope raster map. If not supplied, then a slope map will be calculated internally|None|True
+QgsProcessingParameterRasterLayer|aspect|Optional aspect raster map. If not supplied, then an aspect map will be calculated internally|None|True
+QgsProcessingParameterNumber|size|Size of neighbourhood|QgsProcessingParameterNumber.Integer|3|True|None|None
+QgsProcessingParameterNumber|exponent|Exponent for distance weighting (zero is equal weights)|QgsProcessingParameterNumber.Double|None|True|None|None
+QgsProcessingParameterNumber|nprocs|The maximum number of cores to use for multiprocessing|QgsProcessingParameterNumber.Integer|-1|True|1|None
+QgsProcessingParameterBoolean|-o|Compute openness instead of skyview factor|False
+QgsProcessingParameterRasterDestination|output|Vector Ruggedness Measure Output|None|True
