@@ -1,0 +1,8 @@
+r.skyview
+Computes skyview factor visualization technique.
+Raster (r.*)
+QgsProcessingParameterRasterLayer|input|Name of input raster map|None|False
+QgsProcessingParameterNumber|ndir|Number of directions (8 to 32 recommended)|QgsProcessingParameterNumber.Integer|16|True|2|360
+QgsProcessingParameterNumber|maxdistance|The maximum distance to consider when finding the horizon height|QgsProcessingParameterNumber.Double|None|True|None|None
+QgsProcessingParameterBoolean|-o|Compute openness instead of skyview factor|False
+QgsProcessingParameterRasterDestination|output|Name for output raster map|None|True
